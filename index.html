@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Interactive 3D Tulip Viewer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/style.css">
+	</head>
+	<body>
+        <div id="info-panel" style="display:none;"></div>
+
+		<!-- This Import Map tells the browser how to handle 'three' and 'three/addons/' -->
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://unpkg.com/three@0.153.0/build/three.module.js",
+					"three/addons/": "https://unpkg.com/three@0.153.0/examples/jsm/"
+				}
+			}
+		</script>
+
+		<!-- Link to our main script inside the src folder -->
+		<script type="module" src="./src/initScene.js"></script>
+	</body>
+</html>
